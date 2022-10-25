@@ -17,12 +17,13 @@ body {
   background-image: url("../images/pattern-background-desktop.svg");
   background-repeat: repeat-x;
   background-size: contain;
+}
+main {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .component {
   background-color: white;
   width: 400px;
@@ -98,4 +99,12 @@ body {
 .cancel-order {
   text-decoration: none;
   color: var(--color-Desaturated-blue);
+}
+
+
+.attribution {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
 }
