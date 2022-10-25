@@ -1,0 +1,101 @@
+:root {
+  --color-Pale-blue: hsl(225, 100%, 94%);
+  --color-Bright-blue: hsl(245, 75%, 52%);
+
+  --color-Very-pale-blue: hsl(225, 100%, 98%);
+  --color-Desaturated-blue: hsl(224, 23%, 55%);
+  --color-Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--color-Pale-blue);
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.component {
+  background-color: white;
+  width: 400px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 20px;
+}
+.img img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.info {
+  padding: 32px;
+}
+.info .main-heading {
+  color: var(--color-Dark-blue);
+  margin-top: 15px;
+}
+.info .main-paragraph {
+  color: var(--color-Desaturated-blue);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.plan {
+  background-color: var(--color-Very-pale-blue);
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 20px;
+  border-radius: 20px;
+}
+.plan-info {
+  flex-grow: 1;
+  text-align: left;
+}
+.plan-info .plan-name {
+  color: var(--color-Dark-blue);
+  font-size: 18px;
+}
+
+.plan-info .plan-price {
+  color: var(--color-Desaturated-blue);
+}
+
+.plan a {
+  color: var(--color-Bright-blue);
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--color-Bright-blue);
+  color: white;
+  border-radius: 10px;
+  box-shadow: black 0px 10px 10px -10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: hsl(245, 75%, 62%);
+}
+
+.info .btn-primary {
+  margin: 20px 0 20px;
+}
+
+.cancel-order {
+  text-decoration: none;
+  color: var(--color-Desaturated-blue);
+}
